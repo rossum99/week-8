@@ -5,8 +5,8 @@ typedef struct {
     int x, y;
 } Position;
 
-Position find_final_position(int M, long long A, long long B, Position board[M][M], Position start) {
-    long long total_moves = A * B;  // Total number of moves the beetle will make
+Position find_final_position(int M, int A, int B, Position board[M][M], Position start) {
+    int total_moves = A * B;  
     Position current = start;
     Position visited[M][M];  
     int visited_count[M][M]; 
